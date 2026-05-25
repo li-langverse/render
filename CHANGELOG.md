@@ -1,18 +1,10 @@
 # Changelog
 
-All notable changes to this package will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-
 ## [Unreleased]
 
 ### Added
 
-- Initial scaffold via `scripts/li-new-package` (PKG-render
-
-## [0.1.0] - 2026-05-19
-
-### Added
-
-- Package skeleton.
+- **Scene MD particles** — `RenderMdParticleViewport`, `render_scene_md_particle_viewport` over `li-scene` tiers.
+- **FPS counter** — `RenderFpsCounter`, tick/simulate helpers, `render_fps_counter_meets_target` bench hook.
+- **Viewport smoke** — `RenderViewportSmoke`, `render_wgpu_viewport_smoke` bridging `li-gpu` + `li-gui`.
+- **Bench hook** — `bench/viewport_fps.toml` for `bench-studio-viewport-perf.sh`.
