@@ -1,14 +1,31 @@
 # li-render
 
-Li Studio viewport render layer: **wgpu smoke** bridge (`li-gpu`), **FPS counter** hooks, and **scene MD particle draw** path (`li-scene` tiers 1k/10k/100k) for the bench harness (PH-UX viewport ≥ 60 fps; particles 10k@60 / 100k@30).
+Graphics present path — swapchain descriptor, acquire/present stubs (`workload_class=stub`).
 
-## FPS counter
+**Status:** stub (`render_workload_class_stub` → 0) until trusted wgpu swapchain FFI and draw lists land.
 
-- `RenderFpsCounter` + `render_fps_counter_tick` — rolling FPS estimate for HUD/bench.
-- `render_bench_fps_counter_simulate()` — 120 frames @ ~60 Hz for harness JSON (`meets_target=1` when math holds).
-- Bench hook: `bench/viewport_fps.toml`.
+**Import:** `import render` — `render_swapchain_desc_default`, `render_present_swapchain_smoke_entry`.
 
-## Viewport smoke
+Pairs with `import gpu` device/LKIR smoke (wave-d-06); present hash is render-owned (`480640`).
 
-- `render_wgpu_viewport_smoke(ViewportRegion)` — ties `li-gui` viewport geometry to `gpu_wgpu_smoke_run()`.
-- `native_pixels=0` until wgpu-rs surface records pixels (honest stub).
+## Build
+
+```bash
+lic build src/lib.li -o li-render
+```
+
+From the monorepo root, ensure `lic` is built: `./scripts/build.sh`.
+
+## Traceability
+
+| ID | Link |
+|----|------|
+| Package | `PKG-li-render` |
+| Org repo | https://github.com/li-langverse/li-render |
+| Governance | [Ecosystem governance](https://li-langverse.github.io/li-language/ecosystem/governance/) |
+
+See `PUBLISH.md` and `docs/traceability.md`.
+
+## License
+
+Apache-2.0 OR MIT
