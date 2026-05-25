@@ -1,12 +1,12 @@
-# Traceability — PKG-render
+# Traceability — PKG-li-render
 
-<!-- DOC-traceability-PKG-render -->
+<!-- DOC-traceability-PKG-li-render -->
 
 | Type | ID | Artifact |
 |------|-----|----------|
-| Package | PKG-render | This repository |
-| Phase | PH-Pkg | [Package scaffold](https://github.com/li-langverse/render) |
-| Test | T-PKG-render | `li-tests/smoke/builds.li` |
+| Package | PKG-li-render | This repository |
+| Phase | PH-GD-5 | [World Studio vision](../../../docs/game-dev/world-studio-vision.md) |
+| Test | T-PKG-li-render-smoke | `li-tests/smoke/builds.li` |
 
 ## Requirements
 

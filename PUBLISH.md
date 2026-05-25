@@ -1,11 +1,11 @@
-# Publish metadata — PKG-render
+# Publish metadata — PKG-li-render
 
 | Field | Value |
 |-------|--------|
-| **PKG id** | `PKG-render` |
-| **Registry name** | `render` (lip, phase 8d) |
+| **PKG id** | `PKG-li-render` |
+| **Registry name** | `li-render` (lip, phase 8d) |
 | **Maintainer** | li-langverse |
-| **Repository** | https://github.com/li-langverse/render |
+| **Repository** | https://github.com/li-langverse/li-render |
 | **License** | Apache-2.0 OR MIT (SPDX) |
 
 ## Exports (v1)
